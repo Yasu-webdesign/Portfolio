@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -9,31 +8,182 @@
     <link href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
+
     <body>
       <header>
-        <h1 id="head-title">Portfolio</h1>
-        <ul id="nav-bar">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Works</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="maxheader">
+          <a href="#"><h1 id="head-title">Portfolio</h1></a>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="miniheader">
+          <a href="#"><h1 id="smarthead">Portfolio</h1></a>
+          <i class="fas fa-bars fa-2x menu"></i>
+        </div>
       </header>
+
+      <div class="hidden close" style="display: none;">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fas fa-bars fa-2x menu"></i>
+      </div>
+
+
+
+
 
       <div class="main-body">
         <div class="main-body-concept">
           <h2>Portfolio Site</h2>
-          <p>心理に基づくサイト制作</p>
-          <button type="button" name="button">お問い合わせ</button>
+          <p>最高のクオリティをご提供します。</p>
+          <a href="#contact" class="button">お問い合わせ</a>
         </div>
 
-        <div class="about">
-          
-
+        <div class="about" id="about">
+          <div class="introduction">
+            <h2>About</h2>
+            <p>こんにちは！</p>
+            <p>Webエンジニアの石倉康裕です。</p>
+          </div>
+          <div class="about-me">
+            <img src="portfolioimg/watasidesu.jpg" alt="紹介写真" class="pcver">
+            <img src="portfolioimg/watasidesu.jpg" alt="紹介写真" class="smartver">
+           <div class="about-parts">
+            <div class="about-part">
+              <h3>生い立ち</h3>
+              <p>１９９８年１月６日生まれ。自然に囲まれながらのびのび育ちました。</p>
+              <p>幼いころからモノづくりが得意で小中高で何度も美術賞獲得。</p>
+            </div>
+            <div class="about-part">
+              <h3>積み上げることが大好きです。</h3>
+              <p>中でも英語学習と筋トレと将棋が好きです。</p>
+              <p>時間をかけて物事を追及していく忍耐と好奇心は人一倍です。</p>
+            </div>
+            <div class="about-part last">
+              <h3>意気込み</h3>
+              <p>パーソナルトレーナーとしての経験を活かし、お客様とのコミュニケーションに重きを置いています。</p>
+              <p>お客様の隠れたニーズを引き出します。</p>
+            </div>
+           </div>
+          </div>
         </div>
 
+        <div id="works">
+          <div class="works-intro">
+            <h2>Works</h2>
+            <p>これまでの作品や模写させて頂いたサイトを掲載</p>
+          </div>
+          <div class="workslists">
+          <div class="list">
+            <h3>スポーツ用品店サンプル(スマホサイズ)</h3>
+               <div class="gym work">
+                 <img src="portfolioimg/gymsharkmosha.png" alt="スポーツウェアショップサンプルサイト">
+               </div>
+             <a href="https://row.gymshark.com/">参考サイト様</a>
+          </div>
+           <div class="list">
+             <h3>iSara様（PCサイズ）</h3>
+                <div class="isara work">
+                  <img src="portfolioimg/FireShoiSaramosha.png" alt="iSara様の模写サイトです">
+                </div>
+              <a href="https://isara.life/">元サイト様</a>
+           </div>
+          </div>
+        </div>
+
+        <div id="services">
+         <h2>Service</h2>
+          <div class="servicelists">
+           <div class="wordpress service">
+            <h3>WordPressテーマ制作</h3>
+            <p>コーディング済みの静的サイトを基にWordPressを導入したサイト構築を承ります。</p>
+           </div>
+           <div class="lp service">
+            <h3>LP作成</h3>
+            <p>商品の販売促進に適した「LP（ランディングページ）」の製作を承ります。
+               コンバージョンに結びつきやすいページのご提案致しいたします。SEO対策もお任せください。</p>
+           </div>
+           <div class="coding service">
+             <h3>コーディング代行</h3>
+             <p>デザイン案をベースにWebサイトのコーディングを承ります。
+               ご希望のデザインを忠実に再現致します。レスポンシブ対応もお任せください。</p>
+           </div>
+         </div>
+        </div>
+
+        <div id="skills">
+          <h2>Skills</h2>
+          <div class="stairs">
+           <div class="first-stair">
+            <div class="html/css skill">
+              <h3>HTML/CSS</h3>
+              <p>売り上げに直結するレイアウトとセールスライティング</p>
+              <p>SEOに適切に順応します。</p>
+            </div>
+            <div class="jquery skill">
+              <h3>jQuery</h3>
+              <p>誰もが魅了されるサイト制作</p>
+            </div>
+            <div class="Wordpress skill">
+              <h3>Wordpress</h3>
+              <p>ご要望に応える</p>
+            </div>
+           </div>
+            <div class="second-stair">
+              <div class="php skill">
+                <h3>PHP</h3>
+                <p>機能のあるサイトは好まれます</p>
+              </div>
+              <div class="adobexd skill">
+                <h3>Adobe XD</h3>
+                <p>順序に従順です</p>
+              </div>
+              <div class="sellswriting skill">
+                <h3>セールスライティング</h3>
+                <p>読者を虜にするサイト制作</p>
+                <p>心理学の理論は人間をシンプルに変えた</p>
+              </div>
+            </div>
+           </div>
+        </div>
+
+        <div id="contact">
+          <h2>Contact</h2>
+         <div class="contactlink">
+            <img src="portfolioimg/watasidesu.jpg" alt="私の写真">
+          <div class="contacthere">
+            <p>ご連絡の方はこちらのTwitterアカウントより宜しくお願い致します！</p>
+            <a href="https://twitter.com/webdaisuki"><i class="fab fa-twitter fa-3x"></i></a>
+          </div>
+         </div>
+        </div>
+
+        <div class="footer">
+         <div class="footlinks">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+         </div>
+         <div class="copyright">
+           <p>Copyright(C)2020 Masakazu.All right reserved.</p>
+         </div>
+        </div>
       </div>
 
-
+      <script src="portfolio.js"></script>
     </body>
